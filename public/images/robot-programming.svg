@@ -1,0 +1,95 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="300" fill="#E74C3C"/>
+  
+  <!-- 机器人主体 -->
+  <g transform="translate(100, 50)">
+    <!-- 机器人头部 -->
+    <rect x="50" y="0" width="80" height="60" rx="15" fill="#3498DB" stroke="#2980B9" stroke-width="3"/>
+    
+    <!-- 机器人天线 -->
+    <line x1="75" y1="0" x2="75" y2="-15" stroke="#2980B9" stroke-width="4"/>
+    <circle cx="75" cy="-15" r="5" fill="#E74C3C"/>
+    <line x1="105" y1="0" x2="105" y2="-15" stroke="#2980B9" stroke-width="4"/>
+    <circle cx="105" cy="-15" r="5" fill="#E74C3C"/>
+    
+    <!-- 机器人眼睛 -->
+    <circle cx="70" cy="25" r="8" fill="#2ECC71"/>
+    <circle cx="110" cy="25" r="8" fill="#2ECC71"/>
+    <circle cx="70" cy="25" r="4" fill="#27AE60"/>
+    <circle cx="110" cy="25" r="4" fill="#27AE60"/>
+    
+    <!-- 机器人嘴巴 -->
+    <rect x="80" y="40" width="20" height="8" rx="4" fill="#34495E"/>
+    
+    <!-- 机器人身体 -->
+    <rect x="40" y="60" width="100" height="80" rx="10" fill="#5DADE2" stroke="#3498DB" stroke-width="3"/>
+    
+    <!-- 机器人胸前显示屏 -->
+    <rect x="60" y="80" width="60" height="40" rx="5" fill="#2C3E50"/>
+    <text x="90" y="95" text-anchor="middle" fill="#2ECC71" font-family="monospace" font-size="10">ROBOT</text>
+    <text x="90" y="108" text-anchor="middle" fill="#2ECC71" font-family="monospace" font-size="10">ONLINE</text>
+    
+    <!-- 机器人手臂 -->
+    <rect x="10" y="80" width="25" height="40" rx="12" fill="#3498DB" stroke="#2980B9" stroke-width="2"/>
+    <rect x="145" y="80" width="25" height="40" rx="12" fill="#3498DB" stroke="#2980B9" stroke-width="2"/>
+    
+    <!-- 机器人手 -->
+    <circle cx="22" cy="130" r="12" fill="#F39C12"/>
+    <circle cx="158" cy="130" r="12" fill="#F39C12"/>
+    
+    <!-- 机器人腿 -->
+    <rect x="60" y="140" width="20" height="50" rx="10" fill="#3498DB" stroke="#2980B9" stroke-width="2"/>
+    <rect x="100" y="140" width="20" height="50" rx="10" fill="#3498DB" stroke="#2980B9" stroke-width="2"/>
+    
+    <!-- 机器人脚 -->
+    <ellipse cx="70" cy="200" rx="15" ry="8" fill="#34495E"/>
+    <ellipse cx="110" cy="200" rx="15" ry="8" fill="#34495E"/>
+  </g>
+  
+  <!-- 编程积木 -->
+  <g transform="translate(20, 180)">
+    <!-- 积木块1 -->
+    <rect x="0" y="0" width="80" height="25" rx="12" fill="#9B59B6"/>
+    <text x="40" y="16" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">前进</text>
+    
+    <!-- 积木块2 -->
+    <rect x="0" y="30" width="80" height="25" rx="12" fill="#E67E22"/>
+    <text x="40" y="46" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">转向右</text>
+    
+    <!-- 积木块3 -->
+    <rect x="0" y="60" width="80" height="25" rx="12" fill="#1ABC9C"/>
+    <text x="40" y="76" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">抓取物品</text>
+  </g>
+  
+  <!-- 齿轮装饰 -->
+  <g transform="translate(320, 80)">
+    <!-- 大齿轮 -->
+    <circle cx="0" cy="0" r="25" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+    <circle cx="0" cy="0" r="15" fill="#BDC3C7"/>
+    <circle cx="0" cy="0" r="5" fill="#34495E"/>
+    
+    <!-- 齿轮齿 -->
+    <rect x="-3" y="-30" width="6" height="10" fill="#95A5A6"/>
+    <rect x="-3" y="20" width="6" height="10" fill="#95A5A6"/>
+    <rect x="-30" y="-3" width="10" height="6" fill="#95A5A6"/>
+    <rect x="20" y="-3" width="10" height="6" fill="#95A5A6"/>
+  </g>
+  
+  <g transform="translate(350, 120)">
+    <!-- 小齿轮 -->
+    <circle cx="0" cy="0" r="15" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+    <circle cx="0" cy="0" r="8" fill="#BDC3C7"/>
+    <circle cx="0" cy="0" r="3" fill="#34495E"/>
+    
+    <!-- 小齿轮齿 -->
+    <rect x="-2" y="-18" width="4" height="6" fill="#95A5A6"/>
+    <rect x="-2" y="12" width="4" height="6" fill="#95A5A6"/>
+    <rect x="-18" y="-2" width="6" height="4" fill="#95A5A6"/>
+    <rect x="12" y="-2" width="6" height="4" fill="#95A5A6"/>
+  </g>
+  
+  <!-- 标题文字 -->
+  <text x="200" y="250" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">机器人编程</text>
+  <text x="200" y="275" text-anchor="middle" fill="white" font-family="Arial" font-size="16">硬件+软件，动手又动脑</text>
+</svg>

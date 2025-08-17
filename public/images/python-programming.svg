@@ -1,0 +1,80 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="300" fill="#3776AB"/>
+  
+  <!-- Python logo -->
+  <g transform="translate(50, 50)">
+    <!-- Python蛇形图标 -->
+    <path d="M 50 50 Q 80 30 110 50 Q 140 70 110 100 Q 80 120 50 100 Q 20 80 50 50" fill="#FFD43B" stroke="#3776AB" stroke-width="3"/>
+    <path d="M 110 50 Q 140 30 170 50 Q 200 70 170 100 Q 140 120 110 100" fill="#3776AB" stroke="#FFD43B" stroke-width="3"/>
+    
+    <!-- Python眼睛 -->
+    <circle cx="70" cy="60" r="5" fill="#3776AB"/>
+    <circle cx="150" cy="60" r="5" fill="#FFD43B"/>
+  </g>
+  
+  <!-- 代码编辑器界面 -->
+  <g transform="translate(200, 40)">
+    <!-- 编辑器窗口 -->
+    <rect x="0" y="0" width="180" height="140" rx="8" fill="#2D2D2D" stroke="#555" stroke-width="2"/>
+    
+    <!-- 窗口标题栏 -->
+    <rect x="0" y="0" width="180" height="25" rx="8" fill="#404040"/>
+    <circle cx="15" cy="12" r="4" fill="#FF5F56"/>
+    <circle cx="30" cy="12" r="4" fill="#FFBD2E"/>
+    <circle cx="45" cy="12" r="4" fill="#27CA3F"/>
+    <text x="90" y="17" text-anchor="middle" fill="white" font-family="monospace" font-size="10">Python编程</text>
+    
+    <!-- 代码行 -->
+    <text x="10" y="45" fill="#FF6B6B" font-family="monospace" font-size="12">print("Hello World!")</text>
+    <text x="10" y="65" fill="#4ECDC4" font-family="monospace" font-size="12">for i in range(10):</text>
+    <text x="20" y="85" fill="#45B7D1" font-family="monospace" font-size="12">print(f"数字: {i}")</text>
+    <text x="10" y="105" fill="#96CEB4" font-family="monospace" font-size="12">turtle.forward(100)</text>
+    <text x="10" y="125" fill="#FFEAA7" font-family="monospace" font-size="12">turtle.right(90)</text>
+  </g>
+  
+  <!-- 小海龟图形 -->
+  <g transform="translate(80, 180)">
+    <!-- 海龟身体 -->
+    <ellipse cx="0" cy="0" rx="25" ry="20" fill="#2ECC71"/>
+    
+    <!-- 海龟头 -->
+    <circle cx="20" cy="-5" r="12" fill="#27AE60"/>
+    
+    <!-- 海龟眼睛 -->
+    <circle cx="25" cy="-8" r="3" fill="black"/>
+    
+    <!-- 海龟腿 -->
+    <ellipse cx="-15" cy="-10" rx="8" ry="5" fill="#27AE60"/>
+    <ellipse cx="-15" cy="10" rx="8" ry="5" fill="#27AE60"/>
+    <ellipse cx="15" cy="-15" rx="8" ry="5" fill="#27AE60"/>
+    <ellipse cx="15" cy="15" rx="8" ry="5" fill="#27AE60"/>
+    
+    <!-- 绘制的轨迹 -->
+    <path d="M 0 0 L 60 0 L 60 60 L 0 60 Z" stroke="#E74C3C" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- AI机器人图标 -->
+  <g transform="translate(280, 180)">
+    <!-- 机器人头部 -->
+    <rect x="0" y="0" width="40" height="35" rx="8" fill="#74B9FF"/>
+    
+    <!-- 机器人眼睛 -->
+    <circle cx="12" cy="15" r="4" fill="#00B894"/>
+    <circle cx="28" cy="15" r="4" fill="#00B894"/>
+    
+    <!-- 机器人嘴巴 -->
+    <rect x="15" y="25" width="10" height="3" rx="1" fill="#2D3436"/>
+    
+    <!-- 机器人身体 -->
+    <rect x="5" y="35" width="30" height="40" rx="5" fill="#81ECEC"/>
+    
+    <!-- 机器人手臂 -->
+    <rect x="-5" y="45" width="8" height="20" rx="4" fill="#74B9FF"/>
+    <rect x="37" y="45" width="8" height="20" rx="4" fill="#74B9FF"/>
+  </g>
+  
+  <!-- 标题文字 -->
+  <text x="200" y="250" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">Python趣味编程</text>
+  <text x="200" y="275" text-anchor="middle" fill="white" font-family="Arial" font-size="16">从基础到AI，开启编程之旅</text>
+</svg>

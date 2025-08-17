@@ -1,0 +1,704 @@
+.course-detail-page {
+  padding-top: 80px;
+}
+
+/* 课程头部 */
+.course-hero {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+  color: white;
+  padding: var(--spacing-4xl) 0;
+}
+
+.course-hero-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-4xl);
+  align-items: start;
+}
+
+.course-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.course-breadcrumb a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.course-breadcrumb a:hover {
+  opacity: 1;
+}
+
+.course-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  background: linear-gradient(45deg, white, var(--primary-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.course-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.9;
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 0.875rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.star-filled {
+  color: var(--primary-yellow);
+  fill: var(--primary-yellow);
+}
+
+.star-empty {
+  color: var(--gray-400);
+}
+
+.rating-number {
+  font-weight: 600;
+  margin-left: var(--spacing-xs);
+}
+
+.course-features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.875rem;
+}
+
+.feature-item svg {
+  color: var(--primary-yellow);
+  flex-shrink: 0;
+}
+
+/* 课程卡片 */
+.course-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  position: static;
+}
+
+.course-preview {
+  position: relative;
+  height: 200px;
+  background: var(--gray-100);
+}
+
+.preview-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--gray-500);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+  position: relative;
+}
+
+.preview-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background: url('../../../public/images/coding-tutorial-video.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.preview-placeholder > * {
+  position: relative;
+  z-index: 1;
+}
+
+.preview-placeholder:hover {
+  color: var(--primary-blue);
+  background: var(--gray-50);
+}
+
+.preview-placeholder svg {
+  margin-bottom: var(--spacing-sm);
+}
+
+.course-pricing {
+  padding: var(--spacing-xl);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.current-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-red);
+}
+
+.original-price {
+  font-size: 1.125rem;
+  color: var(--gray-500);
+  text-decoration: line-through;
+}
+
+.enroll-btn,
+.trial-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: var(--spacing-md);
+}
+
+.enroll-btn {
+  background: linear-gradient(135deg, var(--primary-red), var(--accent-orange));
+  color: white;
+}
+
+.enroll-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.trial-btn {
+  background: transparent;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+
+.trial-btn:hover {
+  background: var(--primary-blue);
+  color: white;
+}
+
+.course-includes {
+  padding: var(--spacing-xl);
+}
+
+.course-includes h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+  margin-bottom: var(--spacing-md);
+}
+
+.includes-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.include-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.875rem;
+  color: var(--gray-700);
+}
+
+.include-item svg {
+  color: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+/* 课程详情标签页 */
+.course-details {
+  padding: var(--spacing-4xl) 0;
+}
+
+.details-tabs {
+  display: flex;
+  border-bottom: 2px solid var(--gray-200);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.tab-btn {
+  padding: var(--spacing-md) var(--spacing-xl);
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-btn:hover {
+  color: var(--primary-blue);
+}
+
+.tab-btn.active {
+  color: var(--primary-blue);
+  border-bottom-color: var(--primary-blue);
+}
+
+.tab-content {
+  min-height: 400px;
+}
+
+/* 概述内容 */
+.overview-content {
+  color: var(--gray-700);
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-4xl);
+}
+
+.overview-main h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+  margin-bottom: var(--spacing-lg);
+  margin-top: var(--spacing-2xl);
+}
+
+.overview-main h3:first-child {
+  margin-top: 0;
+}
+
+.course-description {
+  line-height: 1.8;
+  margin-bottom: var(--spacing-xl);
+}
+
+.outcomes-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.outcome-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--primary-blue);
+}
+
+.outcome-item svg {
+  color: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+.age-range {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg);
+  background: linear-gradient(135deg, var(--primary-yellow), var(--accent-orange));
+  color: var(--dark-blue);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+}
+
+.overview-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.requirements-card,
+.tools-card {
+  background: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-200);
+}
+
+.requirements-card h4,
+.tools-card h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+  margin-bottom: var(--spacing-md);
+}
+
+.requirements-list,
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.requirement-item,
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.875rem;
+  color: var(--gray-700);
+}
+
+.requirement-item svg,
+.tool-item svg {
+  color: var(--primary-red);
+  flex-shrink: 0;
+}
+
+/* 课程大纲 */
+.curriculum-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+  margin-bottom: var(--spacing-xl);
+}
+
+.curriculum-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.chapter-item {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+}
+
+.chapter-title {
+  background: var(--gray-50);
+  padding: var(--spacing-lg);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+  margin: 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.lessons-list {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.lesson-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  transition: background-color 0.3s ease;
+}
+
+.lesson-item:hover {
+  background: var(--gray-100);
+}
+
+.lesson-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.lesson-info svg {
+  color: var(--primary-blue);
+}
+
+.lesson-title {
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.lesson-duration {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+/* 讲师介绍 */
+.instructor-content {
+  display: flex;
+  justify-content: center;
+}
+
+.instructor-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  background: white;
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-200);
+  max-width: 600px;
+}
+
+.instructor-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-red));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.instructor-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+  margin-bottom: var(--spacing-sm);
+}
+
+.instructor-title {
+  font-size: 1.125rem;
+  color: var(--primary-blue);
+  font-weight: 500;
+  margin-bottom: var(--spacing-sm);
+}
+
+.instructor-experience {
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+/* 学员评价 */
+.reviews-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+.reviews-summary {
+  background: white;
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.rating-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.rating-score {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+.rating-stars {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.rating-count {
+  color: var(--gray-600);
+  font-size: 0.875rem;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.review-item {
+  background: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-200);
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.reviewer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.reviewer-details h5 {
+  font-weight: 600;
+  color: var(--dark-blue);
+  margin-bottom: var(--spacing-xs);
+}
+
+.review-rating {
+  display: flex;
+  gap: 2px;
+}
+
+.review-text {
+  color: var(--gray-700);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 课程未找到 */
+.course-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+  color: var(--gray-600);
+}
+
+.course-not-found h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-lg);
+  color: var(--dark-blue);
+}
+
+.course-not-found a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.course-not-found a:hover {
+  text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .course-hero-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+  
+  .course-card {
+    position: static;
+  }
+  
+  .overview-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .course-title {
+    font-size: 2rem;
+  }
+  
+  .course-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+  
+  .details-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .tab-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
+  }
+  
+  .instructor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .instructor-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-breadcrumb {
+    flex-wrap: wrap;
+  }
+  
+  .price-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+  
+  .current-price {
+    font-size: 1.5rem;
+  }
+  
+  .details-tabs {
+    justify-content: center;
+  }
+  
+  .tab-btn {
+    flex: 1;
+    min-width: 0;
+  }
+}

@@ -1,0 +1,359 @@
+.footer {
+  background: var(--dark-blue);
+  color: white;
+  margin-top: var(--spacing-2xl);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: var(--spacing-2xl);
+  padding: var(--spacing-2xl) 0;
+}
+
+.footer-section h4 {
+  color: var(--primary-yellow);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--primary-yellow);
+  padding-bottom: var(--spacing-sm);
+  display: inline-block;
+}
+
+/* 品牌信息 */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer-logo .logo-icon {
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--accent-orange) 100%);
+  color: white;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  margin-right: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo .logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo .logo-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+}
+
+.footer-logo .logo-subtitle {
+  font-size: 0.75rem;
+  color: var(--gray-300);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.footer-description {
+  color: var(--gray-300);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--gray-300);
+  font-size: 0.9rem;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--gray-600);
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.social-item:hover {
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  transform: translateY(-2px);
+}
+
+/* 链接列表 */
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-links a {
+  color: var(--gray-300);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--primary-blue);
+}
+
+/* 联系信息 */
+.contact-info {
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--gray-300);
+  margin-bottom: var(--spacing-md);
+  font-size: 0.95rem;
+}
+
+.contact-item svg {
+  color: var(--primary-yellow);
+  flex-shrink: 0;
+}
+
+/* 二维码 */
+.qr-code {
+  display: flex;
+  justify-content: center;
+}
+
+.qr-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 2px dashed var(--gray-600);
+  border-radius: var(--radius-md);
+  color: var(--gray-400);
+  font-size: 0.8rem;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.qr-placeholder:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+/* 二维码弹窗样式 */
+.qr-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.qr-modal {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 90%;
+  max-height: 90vh;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+}
+
+.qr-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.qr-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.qr-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  color: var(--gray-500);
+  transition: all 0.2s ease;
+}
+
+.qr-modal-close:hover {
+  background: var(--gray-100);
+  color: var(--gray-700);
+}
+
+.qr-modal-content {
+  padding: 24px;
+}
+
+.qr-code-display {
+  display: flex;
+  justify-content: center;
+}
+
+.qr-placeholder-large {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 20px;
+  border: 2px dashed var(--gray-300);
+  border-radius: 12px;
+  color: var(--gray-500);
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+}
+
+.qr-placeholder-large p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.qr-placeholder-large span {
+  font-size: 14px;
+  color: var(--gray-600);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.qr-placeholder span {
+  margin-top: var(--spacing-xs);
+}
+
+/* 底部版权 */
+.footer-bottom {
+  border-top: 1px solid var(--gray-600);
+  padding: var(--spacing-lg) 0;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gray-400);
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.footer-bottom-links a {
+  color: var(--gray-400);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: var(--primary-yellow);
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+  
+  .footer-logo {
+    justify-content: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
+  }
+  
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    text-align: center;
+  }
+  
+  .footer-bottom-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}

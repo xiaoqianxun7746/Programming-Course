@@ -1,0 +1,536 @@
+/* 教师页面样式 */
+.teachers-page {
+  padding: 2rem 0;
+  min-height: calc(100vh - 140px);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-red);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 统计信息区域 */
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* 分类筛选 */
+.category-filter {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-btn {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.category-btn:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+  background: var(--primary-blue-light);
+}
+
+.category-btn.active {
+  background: var(--primary-blue);
+  color: white;
+  border-color: var(--primary-blue);
+}
+
+/* 结果信息 */
+.results-info {
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* 教师网格 */
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* 教师卡片 */
+.teacher-card {
+  background: white;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* 教师头部 */
+.teacher-header {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem 2rem 1rem;
+  background: linear-gradient(135deg, var(--bg-light), white);
+}
+
+.teacher-avatar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+  box-shadow: var(--shadow-md);
+}
+
+.avatar-placeholder.teacher-zhang {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark));
+}
+
+.avatar-placeholder.teacher-li {
+  background: linear-gradient(135deg, var(--primary-red), #d32f2f);
+}
+
+.avatar-placeholder.teacher-wang {
+  background: linear-gradient(135deg, var(--primary-yellow), #f57c00);
+}
+
+.avatar-placeholder.teacher-chen {
+  background: linear-gradient(135deg, #66bb6a, #43a047);
+}
+
+.avatar-placeholder.teacher-liu {
+  background: linear-gradient(135deg, #ab47bc, #8e24aa);
+}
+
+.avatar-placeholder.teacher-zhao {
+  background: linear-gradient(135deg, #ef5350, #e53935);
+}
+
+.avatar-placeholder.teacher-sun {
+  background: linear-gradient(135deg, #26c6da, #00acc1);
+}
+
+.avatar-placeholder.teacher-zhou {
+  background: linear-gradient(135deg, #ff7043, #f4511e);
+}
+
+.star-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 24px;
+  height: 24px;
+  background: var(--primary-yellow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.teacher-basic-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.teacher-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.teacher-title {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.teacher-stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.stat svg {
+  color: var(--primary-yellow);
+}
+
+/* 教师内容 */
+.teacher-content {
+  padding: 0 2rem 2rem;
+}
+
+.teacher-content > div {
+  margin-bottom: 1.5rem;
+}
+
+.teacher-content > div:last-child {
+  margin-bottom: 0;
+}
+
+.teacher-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+/* 专业领域 */
+.specialties-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.specialty-tag {
+  padding: 0.25rem 0.75rem;
+  background: var(--primary-blue-light);
+  color: var(--primary-blue);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* 教育背景 */
+.education-item {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.education-item strong {
+  color: var(--text-primary);
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.education-item span {
+  color: var(--text-secondary);
+}
+
+/* 教师描述 */
+.teacher-description p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* 主要成就 */
+.teacher-achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.teacher-achievements li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.teacher-achievements li svg {
+  color: var(--primary-yellow);
+  flex-shrink: 0;
+}
+
+/* 联系方式 */
+.teacher-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.contact-item svg {
+  color: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+/* 教师操作 */
+.teacher-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.teacher-actions .btn {
+  flex: 1;
+  padding: 0.75rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* 招聘区域 */
+.recruitment-section {
+  margin-top: 4rem;
+}
+
+.recruitment-card {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark));
+  color: white;
+  padding: 3rem;
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.recruitment-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.recruitment-card p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recruitment-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  opacity: 0.9;
+  color: #000;
+}
+
+.benefit-item svg {
+  color: var(--primary-yellow);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* 空状态 */
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--bg-light);
+  border-radius: var(--border-radius-lg);
+  border: 2px dashed var(--border-color);
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .teachers-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+  
+  .category-filter {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .teachers-page {
+    padding: 1rem 0;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .teachers-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .teacher-header {
+    padding: 1.5rem 1.5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .teacher-content {
+    padding: 0 1.5rem 1.5rem;
+  }
+  
+  .teacher-stats {
+    justify-content: center;
+  }
+  
+  .category-filter {
+    gap: 0.5rem;
+  }
+  
+  .category-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .recruitment-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .recruitment-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .recruitment-benefits {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .teacher-actions {
+    flex-direction: column;
+  }
+  
+  .avatar-placeholder {
+    width: 60px;
+    height: 60px;
+    font-size: 1.4rem;
+  }
+  
+  .teacher-name {
+    font-size: 1.25rem;
+  }
+  
+  .specialties-tags {
+    justify-content: center;
+  }
+  
+  .teacher-contact {
+    align-items: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
+  }
+}

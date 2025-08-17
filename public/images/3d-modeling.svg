@@ -1,0 +1,135 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="300" fill="#FF5722"/>
+  
+  <!-- 3D建模软件界面 -->
+  <g transform="translate(50, 30)">
+    <!-- 软件窗口 -->
+    <rect x="0" y="0" width="300" height="200" rx="10" fill="#37474F" stroke="#263238" stroke-width="3"/>
+    
+    <!-- 标题栏 -->
+    <rect x="0" y="0" width="300" height="25" rx="10" fill="#455A64"/>
+    <circle cx="15" cy="12" r="4" fill="#F44336"/>
+    <circle cx="30" cy="12" r="4" fill="#FF9800"/>
+    <circle cx="45" cy="12" r="4" fill="#4CAF50"/>
+    <text x="150" y="17" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">3D建模工具</text>
+    
+    <!-- 工具栏 -->
+    <rect x="10" y="35" width="280" height="30" rx="5" fill="#546E7A"/>
+    
+    <!-- 工具按钮 -->
+    <rect x="15" y="40" width="20" height="20" rx="3" fill="#78909C"/>
+    <rect x="40" y="40" width="20" height="20" rx="3" fill="#78909C"/>
+    <rect x="65" y="40" width="20" height="20" rx="3" fill="#78909C"/>
+    <rect x="90" y="40" width="20" height="20" rx="3" fill="#78909C"/>
+    
+    <!-- 工具图标 -->
+    <circle cx="25" cy="50" r="3" fill="#ECEFF1"/>
+    <rect x="47" y="47" width="6" height="6" fill="#ECEFF1"/>
+    <polygon points="72,47 78,47 75,53" fill="#ECEFF1"/>
+    <line x1="97" y1="47" x2="103" y2="53" stroke="#ECEFF1" stroke-width="2"/>
+    
+    <!-- 3D视窗 -->
+    <rect x="10" y="75" width="280" height="115" rx="5" fill="#263238"/>
+    
+    <!-- 网格背景 -->
+    <defs>
+      <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#37474F" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect x="10" y="75" width="280" height="115" fill="url(#grid)"/>
+    
+    <!-- 3D立方体 -->
+    <g transform="translate(120, 120)">
+      <!-- 立方体前面 -->
+      <rect x="0" y="0" width="40" height="40" fill="#2196F3" stroke="#1976D2" stroke-width="2"/>
+      
+      <!-- 立方体右面 -->
+      <polygon points="40,0 60,20 60,60 40,40" fill="#1976D2" stroke="#0D47A1" stroke-width="2"/>
+      
+      <!-- 立方体顶面 -->
+      <polygon points="0,0 20,20 60,20 40,0" fill="#42A5F5" stroke="#1976D2" stroke-width="2"/>
+      
+      <!-- 立方体边线 -->
+      <line x1="0" y1="0" x2="20" y2="20" stroke="#0D47A1" stroke-width="1"/>
+      <line x1="40" y1="0" x2="60" y2="20" stroke="#0D47A1" stroke-width="1"/>
+      <line x1="0" y1="40" x2="20" y2="60" stroke="#0D47A1" stroke-width="1"/>
+      <line x1="40" y1="40" x2="60" y2="60" stroke="#0D47A1" stroke-width="1"/>
+    </g>
+    
+    <!-- 3D球体 -->
+    <g transform="translate(200, 130)">
+      <circle cx="0" cy="0" r="25" fill="#4CAF50" stroke="#388E3C" stroke-width="2"/>
+      <!-- 球体高光 -->
+      <ellipse cx="-8" cy="-8" rx="8" ry="12" fill="#81C784" opacity="0.7"/>
+      <!-- 球体阴影线 -->
+      <path d="M -20 0 Q 0 -15 20 0 Q 0 15 -20 0" stroke="#2E7D32" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- 坐标轴 -->
+    <g transform="translate(30, 170)">
+      <!-- X轴 (红色) -->
+      <line x1="0" y1="0" x2="30" y2="0" stroke="#F44336" stroke-width="3"/>
+      <text x="35" y="5" fill="#F44336" font-family="Arial" font-size="10" font-weight="bold">X</text>
+      
+      <!-- Y轴 (绿色) -->
+      <line x1="0" y1="0" x2="0" y2="-30" stroke="#4CAF50" stroke-width="3"/>
+      <text x="-8" y="-35" fill="#4CAF50" font-family="Arial" font-size="10" font-weight="bold">Y</text>
+      
+      <!-- Z轴 (蓝色) -->
+      <line x1="0" y1="0" x2="20" y2="-20" stroke="#2196F3" stroke-width="3"/>
+      <text x="25" y="-25" fill="#2196F3" font-family="Arial" font-size="10" font-weight="bold">Z</text>
+    </g>
+  </g>
+  
+  <!-- 设计工具 -->
+  <g transform="translate(30, 240)">
+    <!-- 画笔 -->
+    <rect x="0" y="0" width="3" height="30" fill="#8D6E63"/>
+    <polygon points="0,0 3,0 6,10 -3,10" fill="#FFB74D"/>
+    <circle cx="1.5" cy="35" r="2" fill="#37474F"/>
+    
+    <!-- 尺子 -->
+    <rect x="15" y="5" width="40" height="8" fill="#FFC107" stroke="#FF8F00" stroke-width="1"/>
+    <line x1="20" y1="5" x2="20" y2="13" stroke="#FF8F00" stroke-width="1"/>
+    <line x1="25" y1="5" x2="25" y2="10" stroke="#FF8F00" stroke-width="1"/>
+    <line x1="30" y1="5" x2="30" y2="13" stroke="#FF8F00" stroke-width="1"/>
+    <line x1="35" y1="5" x2="35" y2="10" stroke="#FF8F00" stroke-width="1"/>
+    <line x1="40" y1="5" x2="40" y2="13" stroke="#FF8F00" stroke-width="1"/>
+    <line x1="45" y1="5" x2="45" y2="10" stroke="#FF8F00" stroke-width="1"/>
+    <line x1="50" y1="5" x2="50" y2="13" stroke="#FF8F00" stroke-width="1"/>
+    
+    <!-- 圆规 -->
+    <g transform="translate(70, 10)">
+      <line x1="0" y1="0" x2="5" y2="15" stroke="#607D8B" stroke-width="2"/>
+      <line x1="0" y1="0" x2="-5" y2="15" stroke="#607D8B" stroke-width="2"/>
+      <circle cx="0" cy="0" r="2" fill="#455A64"/>
+      <circle cx="5" cy="15" r="1" fill="#263238"/>
+      <circle cx="-5" cy="15" r="1" fill="#263238"/>
+    </g>
+  </g>
+  
+  <!-- 创意灯泡 -->
+  <g transform="translate(320, 240)">
+    <!-- 灯泡 -->
+    <circle cx="0" cy="0" r="15" fill="#FFF176" stroke="#F57F17" stroke-width="2"/>
+    <rect x="-6" y="12" width="12" height="10" rx="3" fill="#8D6E63"/>
+    
+    <!-- 灯泡内部线条 -->
+    <path d="M -8 -5 Q 0 -10 8 -5" stroke="#F57F17" stroke-width="1" fill="none"/>
+    <path d="M -6 0 Q 0 -3 6 0" stroke="#F57F17" stroke-width="1" fill="none"/>
+    
+    <!-- 创意火花 -->
+    <g stroke="#FFD54F" stroke-width="2" fill="none">
+      <line x1="-20" y1="-10" x2="-25" y2="-15"/>
+      <line x1="-18" y1="-18" x2="-22" y2="-22"/>
+      <line x1="20" y1="-10" x2="25" y2="-15"/>
+      <line x1="18" y1="-18" x2="22" y2="-22"/>
+      <line x1="0" y1="-20" x2="0" y2="-25"/>
+    </g>
+  </g>
+  
+  <!-- 标题文字 -->
+  <text x="200" y="25" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">3D建模与设计</text>
+</svg>

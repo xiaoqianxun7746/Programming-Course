@@ -1,0 +1,88 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="300" fill="#F7DF1E"/>
+  
+  <!-- 游戏屏幕 -->
+  <g transform="translate(50, 30)">
+    <!-- 屏幕边框 -->
+    <rect x="0" y="0" width="300" height="200" rx="15" fill="#2C3E50" stroke="#34495E" stroke-width="4"/>
+    
+    <!-- 屏幕内容区域 -->
+    <rect x="10" y="10" width="280" height="180" rx="8" fill="#1A252F"/>
+    
+    <!-- 游戏标题 -->
+    <text x="150" y="35" text-anchor="middle" fill="#F7DF1E" font-family="Arial" font-size="18" font-weight="bold">SPACE ADVENTURE</text>
+    
+    <!-- 星星背景 -->
+    <circle cx="50" cy="60" r="2" fill="white"/>
+    <circle cx="120" cy="50" r="1.5" fill="white"/>
+    <circle cx="200" cy="70" r="2" fill="white"/>
+    <circle cx="250" cy="55" r="1" fill="white"/>
+    <circle cx="80" cy="90" r="1.5" fill="white"/>
+    <circle cx="220" cy="100" r="2" fill="white"/>
+    
+    <!-- 宇宙飞船 -->
+    <g transform="translate(130, 120)">
+      <!-- 飞船主体 -->
+      <polygon points="0,-15 -10,10 0,5 10,10" fill="#3498DB"/>
+      <!-- 飞船窗口 -->
+      <circle cx="0" cy="-5" r="4" fill="#85C1E9"/>
+      <!-- 推进器火焰 -->
+      <polygon points="-5,10 0,20 5,10" fill="#E74C3C"/>
+    </g>
+    
+    <!-- 敌人飞船 -->
+    <g transform="translate(80, 80)">
+      <polygon points="0,-8 -8,8 8,8" fill="#E74C3C"/>
+      <circle cx="0" cy="2" r="3" fill="#C0392B"/>
+    </g>
+    
+    <g transform="translate(220, 90)">
+      <polygon points="0,-8 -8,8 8,8" fill="#E74C3C"/>
+      <circle cx="0" cy="2" r="3" fill="#C0392B"/>
+    </g>
+    
+    <!-- 激光束 -->
+    <rect x="128" y="100" width="4" height="15" fill="#2ECC71"/>
+    <rect x="148" y="85" width="4" height="15" fill="#2ECC71"/>
+    
+    <!-- 分数显示 -->
+    <text x="20" y="175" fill="#F7DF1E" font-family="monospace" font-size="12">SCORE: 1250</text>
+    <text x="200" y="175" fill="#F7DF1E" font-family="monospace" font-size="12">LIVES: ♥♥♥</text>
+  </g>
+  
+  <!-- 代码编辑器 -->
+  <g transform="translate(20, 240)">
+    <!-- 代码窗口 -->
+    <rect x="0" y="0" width="200" height="50" rx="5" fill="#2D2D2D" stroke="#555" stroke-width="1"/>
+    
+    <!-- 代码内容 -->
+    <text x="5" y="15" fill="#F7DF1E" font-family="monospace" font-size="10">function movePlayer() {</text>
+    <text x="10" y="28" fill="#74B9FF" font-family="monospace" font-size="10">player.x += speed;</text>
+    <text x="5" y="41" fill="#F7DF1E" font-family="monospace" font-size="10">}</text>
+  </g>
+  
+  <!-- 游戏手柄 -->
+  <g transform="translate(280, 240)">
+    <!-- 手柄主体 -->
+    <rect x="0" y="0" width="80" height="40" rx="20" fill="#34495E"/>
+    
+    <!-- 方向键 -->
+    <rect x="15" y="15" width="8" height="8" rx="2" fill="#95A5A6"/>
+    
+    <!-- 按钮 -->
+    <circle cx="55" cy="15" r="4" fill="#E74C3C"/>
+    <circle cx="65" cy="20" r="4" fill="#2ECC71"/>
+    <circle cx="55" cy="25" r="4" fill="#3498DB"/>
+    <circle cx="45" cy="20" r="4" fill="#F39C12"/>
+  </g>
+  
+  <!-- JavaScript logo -->
+  <g transform="translate(350, 50)">
+    <rect x="0" y="0" width="30" height="30" rx="3" fill="#F7DF1E"/>
+    <text x="15" y="22" text-anchor="middle" fill="#2C3E50" font-family="Arial" font-size="20" font-weight="bold">JS</text>
+  </g>
+  
+  <!-- 标题文字 -->
+  <text x="200" y="20" text-anchor="middle" fill="#2C3E50" font-family="Arial" font-size="24" font-weight="bold">JavaScript游戏开发</text>
+</svg>

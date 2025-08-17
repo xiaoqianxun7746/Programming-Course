@@ -1,0 +1,101 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="300" fill="#1a1a1a"/>
+  
+  <!-- 视频播放器界面 -->
+  <g transform="translate(50, 50)">
+    <!-- 播放器外框 -->
+    <rect x="0" y="0" width="300" height="200" rx="10" fill="#2d2d2d" stroke="#444" stroke-width="2"/>
+    
+    <!-- 视频内容区域 -->
+    <rect x="10" y="10" width="280" height="150" rx="5" fill="#000"/>
+    
+    <!-- 视频内容 - 编程教学场景 -->
+    <g transform="translate(20, 20)">
+      <!-- 老师角色 -->
+      <g transform="translate(50, 60)">
+        <!-- 头部 -->
+        <circle cx="0" cy="0" r="20" fill="#FFDBCB"/>
+        <!-- 头发 -->
+        <path d="M -15 -12 Q 0 -25 15 -12 Q 12 -20 0 -20 Q -12 -20 -15 -12" fill="#4A4A4A"/>
+        <!-- 眼睛 -->
+        <circle cx="-6" cy="-3" r="2" fill="black"/>
+        <circle cx="6" cy="-3" r="2" fill="black"/>
+        <!-- 嘴巴 -->
+        <path d="M -4 4 Q 0 8 4 4" stroke="black" stroke-width="1" fill="none"/>
+        
+        <!-- 身体 -->
+        <rect x="-12" y="20" width="24" height="30" rx="12" fill="#3498DB"/>
+        
+        <!-- 手臂 -->
+        <rect x="-20" y="25" width="8" height="20" rx="4" fill="#FFDBCB"/>
+        <rect x="12" y="25" width="8" height="20" rx="4" fill="#FFDBCB"/>
+        
+        <!-- 指向手势 -->
+        <circle cx="25" cy="35" r="3" fill="#FFDBCB"/>
+      </g>
+      
+      <!-- 代码展示屏幕 -->
+      <g transform="translate(120, 30)">
+        <!-- 屏幕 -->
+        <rect x="0" y="0" width="120" height="80" rx="5" fill="#1e1e1e" stroke="#555" stroke-width="1"/>
+        
+        <!-- 代码内容 -->
+        <text x="5" y="15" fill="#569CD6" font-family="monospace" font-size="8">def hello_world():</text>
+        <text x="10" y="25" fill="#DCDCAA" font-family="monospace" font-size="8">print("Hello, World!")</text>
+        <text x="5" y="40" fill="#569CD6" font-family="monospace" font-size="8">for i in range(5):</text>
+        <text x="10" y="50" fill="#DCDCAA" font-family="monospace" font-size="8">print(f"数字: {i}")</text>
+        <text x="5" y="65" fill="#4EC9B0" font-family="monospace" font-size="8">hello_world()</text>
+        
+        <!-- 运行结果 -->
+        <rect x="5" y="70" width="110" height="8" fill="#0C7D9D"/>
+        <text x="7" y="77" fill="white" font-family="monospace" font-size="6">Hello, World!</text>
+      </g>
+      
+      <!-- 学习要点标注 -->
+      <g transform="translate(20, 100)">
+        <!-- 箭头指向代码 -->
+        <path d="M 0 0 L 80 -40 L 75 -35 M 80 -40 L 75 -45" stroke="#FFD700" stroke-width="2" fill="none"/>
+        
+        <!-- 说明文字气泡 -->
+        <ellipse cx="0" cy="0" rx="35" ry="15" fill="#FFD700" opacity="0.9"/>
+        <text x="0" y="-3" text-anchor="middle" fill="black" font-family="Arial" font-size="8" font-weight="bold">函数定义</text>
+        <text x="0" y="5" text-anchor="middle" fill="black" font-family="Arial" font-size="8">很重要!</text>
+      </g>
+    </g>
+    
+    <!-- 播放控制栏 -->
+    <rect x="10" y="170" width="280" height="20" rx="3" fill="#333"/>
+    
+    <!-- 播放按钮 -->
+    <g transform="translate(25, 180)">
+      <circle cx="0" cy="0" r="6" fill="#4CAF50"/>
+      <polygon points="-2,-3 -2,3 4,0" fill="white"/>
+    </g>
+    
+    <!-- 进度条 -->
+    <rect x="45" y="177" width="200" height="6" rx="3" fill="#555"/>
+    <rect x="45" y="177" width="80" height="6" rx="3" fill="#4CAF50"/>
+    <circle cx="125" cy="180" r="4" fill="#4CAF50"/>
+    
+    <!-- 时间显示 -->
+    <text x="255" y="185" fill="white" font-family="Arial" font-size="10">05:32 / 12:45</text>
+    
+    <!-- 音量和设置 -->
+    <g transform="translate(270, 180)">
+      <!-- 音量图标 -->
+      <polygon points="0,-3 3,-3 6,-6 6,6 3,3 0,3" fill="white"/>
+      <path d="M 8 -2 Q 10 0 8 2" stroke="white" stroke-width="1" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- 视频标题 -->
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial" font-size="18" font-weight="bold">Python编程入门教程</text>
+  
+  <!-- 播放统计 -->
+  <g transform="translate(50, 270)">
+    <text x="0" y="0" fill="#888" font-family="Arial" font-size="12">👁 1,234 次观看</text>
+    <text x="120" y="0" fill="#888" font-family="Arial" font-size="12">👍 98 个赞</text>
+    <text x="200" y="0" fill="#888" font-family="Arial" font-size="12">💬 23 条评论</text>
+  </g>
+</svg>
